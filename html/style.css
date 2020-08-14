@@ -1,0 +1,79 @@
+body {
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto;
+  grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
+  row-gap: 25px;
+  justify-content: center;
+}
+
+.grid div {
+  margin: auto;
+  align-items: center;
+}
+
+.grid div img {
+  padding: 0 3px;
+}
+
+.model {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 12px;
+  top: 14px;
+  right: 0;
+  z-index: -1;
+}
+
+.controls {
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  display: grid;
+  grid-template-columns: 50px;
+  grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
+  row-gap: 25px;
+  justify-content: center;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+}
+
+.buttonGroup div {
+  margin: 0 20px;
+  margin-top: 15px;
+}
+
+.buttonGroup span {
+  text-emphasis: none;
+}
+
+.buttonGroup button {
+  margin: 2px;
+}
+
+button img {
+  height: auto;
+  width: 15px;
+}
+
+.blueControl button {
+  background-color: #2374B4;
+}
+
+.redControl button {
+  background-color: #C24B50;
+}
+
+button {
+  border-radius: 3px;
+  border: none;
+  padding: 5px 10px;
+}

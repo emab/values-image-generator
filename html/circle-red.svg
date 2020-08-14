@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 59 59" width="55" height="55">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { stroke: #BC282E; stroke-width: 2; fill: #FFFFFF } 
+	</style>
+	<path id="Background" class="shp0" d="M27.5 55C12.29 55 0 42.71 0 27.5C0 12.29 12.29 0 27.5 0C42.71 0 55 12.29 55 27.5C55 42.71 42.71 55 27.5 55Z" />
+</svg>

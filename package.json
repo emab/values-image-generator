@@ -1,0 +1,22 @@
+{
+  "name": "valuesgenerator",
+  "version": "0.0.1",
+  "description": "An electron app that generates a values diagram",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . values-generator --platform=win32 --arch=x64"
+  },
+  "author": "Eddy Brown",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.2.0",
+    "electron-packager": "^15.0.0",
+    "electron-winstaller": "^4.0.1",
+    "electron-wix-msi": "^3.0.0"
+  },
+  "dependencies": {
+    "file-saver": "^1.3.2",
+    "html2canvas": "^1.0.0-rc.7"
+  }
+}
