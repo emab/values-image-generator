@@ -2,6 +2,8 @@
 
 An electron app that can be used to build a Barrett Model diagram.
 
+![App Example](/img/app.png)
+
 ## Building and installing
 
 Package using `electron-packager`:
