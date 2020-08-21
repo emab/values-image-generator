@@ -1,11 +1,13 @@
 {
   "name": "valuesgenerator",
+  "productName": "Values Generator",
   "version": "0.0.1",
   "description": "An electron app that generates a values diagram",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . values-generator --platform=win32 --arch=x64"
+    "buildWin": "electron-packager . valuesgenerator --platform=win32 --arch=x64 --out build",
+    "buildAll": "electron-packager . valuesgenerator --out build"
   },
   "author": "Eddy Brown",
   "license": "ISC",

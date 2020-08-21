@@ -15,12 +15,21 @@ const remCircle = (circleType) => (id) => {
 };
 
 const saveImage = () => {
-  html2canvas(document.getElementById('model')).then((canvas) => {
-    canvas.toBlob((blob) => {
-      saveAs(blob, 'diagram.png', { type: "image/png" });
-    });
-  });
+  html2canvas(document.getElementById('model'), { height: 700, width: 465 }).then(
+    (canvas) => {
+      canvas.toBlob((blob) => {
+        saveAs(blob, 'diagram.png', { type: 'image/png' });
+      });
+    }
+  );
 };
+
+const reset = () => {
+  const divs = document.getElementById('circleGrid').children;
+  Array.from(divs).forEach(div => {
+    div.innerHTML = "";
+  })
+}
 
 const addBlueCircle = addCircle(BLUE_CIRCLE);
 const addRedCircle = addCircle(RED_CIRCLE);

@@ -3,8 +3,8 @@ const { app, BrowserWindow } = require('electron');
 function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
-    width: 800,
-    height: 780,
+    width: 630,
+    height: 790,
     webPreferences: {
       nodeIntegration: true,
     },
@@ -15,7 +15,7 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  win.loadFile('./html/test.html');
+  win.loadFile('./html/index.html');
 }
 
 // This method will be called when Electron has finished
