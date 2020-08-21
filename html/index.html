@@ -86,9 +86,9 @@
       </div>
     </div>
 
-    <div id="model">
-      <img src="./model-shadow.png" class="model" />
-      <div class="grid">
+    <div id="model" class="modelHolder">
+      <img src="./model.png" class="modelImage" />
+      <div class="grid" id="circleGrid">
         <div id="1"></div>
         <div id="2"></div>
         <div id="3"></div>
@@ -99,7 +99,11 @@
       </div>
     </div>
   </div>
-  <button id="testButton" onclick="saveImage()">Save Diagram</button>
-
+  <div class="buttons">
+    <button onclick="saveImage()">Save Diagram</button>
+    <button style="background-color: rgb(223, 77, 77);" onclick="reset()">
+      Reset
+    </button>
+  </div>
   <script src="main.js" type="text/javascript"></script>
 </body>

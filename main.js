@@ -15,7 +15,7 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  win.loadFile('./html/test.html');
+  win.loadFile('./html/index.html');
 }
 
 // This method will be called when Electron has finished
