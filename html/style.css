@@ -2,6 +2,11 @@ body {
   margin-top: 20px;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: 23% 77%;
+}
+
 .grid {
   display: grid;
   width: 100%;
@@ -20,25 +25,26 @@ body {
   padding: 0 3px;
 }
 
-.model {
+.modelImage {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 12px;
-  top: 14px;
-  right: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  padding-right: 2px;
+  padding-bottom: 4px;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 
+.modelHolder {
+  position: relative;
+  margin-top: 10px;
+}
+
 .controls {
-  position: absolute;
-  left: 12px;
-  top: 14px;
   display: grid;
-  grid-template-columns: 50px;
   grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
   row-gap: 25px;
-  justify-content: center;
 }
 
 .buttonGroup {
@@ -70,6 +76,10 @@ button img {
 
 .redControl button {
   background-color: #C24B50;
+}
+
+.buttons {
+  margin-top: 20px;
 }
 
 button {
