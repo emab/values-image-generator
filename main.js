@@ -8,8 +8,8 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
     },
-    resizable: false,
-    autoHideMenuBar: true,
+    //resizable: false,
+    //autoHideMenuBar: true,
     title: "Values Diagram Generator",
     titleBarStyle: "hidden"
   });
