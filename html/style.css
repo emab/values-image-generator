@@ -1,10 +1,10 @@
-body {
-  margin-top: 20px;
+html {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 .main {
   display: grid;
-  grid-template-columns: 23% 77%;
+  grid-template-columns: 30% 70%;
 }
 
 .grid {
@@ -14,6 +14,7 @@ body {
   grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
   row-gap: 25px;
   justify-content: center;
+  padding-top: 19px;
 }
 
 .grid div {
@@ -27,63 +28,75 @@ body {
 
 .modelImage {
   position: absolute;
-  top: 50%;
   left: 50%;
   margin-right: -50%;
-  padding-right: 2px;
-  padding-bottom: 4px;
-  transform: translate(-50%, -50%);
+  margin-right: 5px;
+  transform: translate(-50%, 0);
   z-index: -1;
 }
 
 .modelHolder {
   position: relative;
-  margin-top: 10px;
+  max-height: 95vh;
+  overflow-y: scroll;
+}
+
+#modelHolderSmall {
+  width: 415px;
+  margin: auto;
 }
 
 .controls {
-  display: grid;
-  grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
-  row-gap: 25px;
-}
-
-.buttonGroup {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  height: 95vh;
+  overflow-y: scroll;
 }
 
-.buttonGroup div {
-  margin: 0 20px;
-  margin-top: 15px;
+.controls div:nth-child(even){background-color: #f2f2f2;}
+
+.controls div input {
+  float: right;
 }
 
-.buttonGroup span {
-  text-emphasis: none;
+.controls div:hover {
+  background-color: #ddd;
 }
 
-.buttonGroup button {
-  margin: 2px;
-}
-
-button img {
-  height: auto;
-  width: 15px;
-}
-
-.blueControl button {
-  background-color: #2374B4;
-}
-
-.redControl button {
-  background-color: #C24B50;
-}
-
-.buttons {
+.table {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#table {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4766ee;
+  color: white;
 }
 
 button {
   border-radius: 3px;
   border: none;
   padding: 5px 10px;
+}
+
+.buttons {
+  height: 3vh;
 }
