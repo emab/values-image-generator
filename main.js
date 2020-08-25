@@ -3,12 +3,11 @@ const { app, BrowserWindow } = require('electron');
 function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
-    width: 630,
-    height: 790,
+    width: 1200,
+    height: 900,
     webPreferences: {
       nodeIntegration: true,
     },
-    resizable: false,
     autoHideMenuBar: true,
     title: "Values Diagram Generator",
     titleBarStyle: "hidden"
