@@ -4,10 +4,27 @@
 </head>
 <body>
   <div class="buttons">
-    <button onclick="saveImage()">Save Diagram</button>
-    <button style="background-color: rgb(223, 77, 77);" onclick="reset()">
+    <button style="background-color: aquamarine;" onclick="saveImage()">
+      Save Diagram
+    </button>
+    <button
+      style="background-color: rgb(223, 77, 77); margin-right: 30px;"
+      onclick="reset()"
+    >
       Reset
     </button>
+    Value: <input type="text" id="newValueName"/> Limiting: <input type="checkbox" id="newValueLimiting" />
+    Level:
+    <select id="newValueLevel">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+    </select>
+    <button style="background-color: rgb(119, 175, 119);" onclick="addNewValue()">Add</button>
   </div>
   <div class="main">
     <div class="controls" id="controls"></div>
@@ -31,9 +48,7 @@
                 <th>Level</th>
               </tr>
             </thead>
-            <tbody>
-  
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
       </div>

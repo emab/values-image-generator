@@ -1,6 +1,4 @@
 html {
-  max-height: 100vh;
-  overflow-y: scroll;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
@@ -39,21 +37,19 @@ html {
 
 .modelHolder {
   position: relative;
+  max-height: 95vh;
+  overflow-y: scroll;
 }
 
 #modelHolderSmall {
-  margin-right: auto;
-  left: 50%;
-  margin-right: -50%;
-  margin-right: 5px;
-  transform: translate(30%, 0);
   width: 415px;
+  margin: auto;
 }
 
 .controls {
   display: flex;
   flex-direction: column;
-  height: 97vh;
+  height: 95vh;
   overflow-y: scroll;
 }
 
@@ -61,6 +57,10 @@ html {
 
 .controls div input {
   float: right;
+}
+
+.controls div:hover {
+  background-color: #ddd;
 }
 
 .table {
@@ -71,7 +71,7 @@ html {
 
 #table {
   border-collapse: collapse;
-  width: 50%;
+  width: 90%;
 }
 
 #table td, #table th {
