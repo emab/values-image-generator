@@ -7,6 +7,7 @@
   "scripts": {
     "start": "electron .",
     "buildWin": "electron-packager . valuesgenerator --platform=win32 --arch=x64 --out build",
+    "buildOSX": "electron-packager . valuesgenerator --platform=darwin --out build",
     "buildAll": "electron-packager . valuesgenerator --out build"
   },
   "author": "Eddy Brown",
