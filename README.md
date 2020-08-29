@@ -8,10 +8,6 @@ An electron app that can be used to build a Barrett Model diagram.
 
 Package using `electron-packager`:
 
-```bash
-npm i electron-packager --save-dev
-```
-
 To generate program for all distributions, use:
 
 ```bash
