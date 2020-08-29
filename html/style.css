@@ -57,6 +57,7 @@ html {
 
 .controls div input {
   float: right;
+  margin-right: 15px
 }
 
 .controls div:hover {
