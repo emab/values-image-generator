@@ -37,11 +37,11 @@ html {
 
 .modelHolder {
   position: relative;
-  max-height: 95vh;
+  max-height: 90vh;
   overflow-y: scroll;
 }
 
-#modelHolderSmall {
+.modelHolderSmall {
   width: 415px;
   margin: auto;
 }
@@ -49,7 +49,7 @@ html {
 .controls {
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  height: 90vh;
   overflow-y: scroll;
 }
 
@@ -99,5 +99,5 @@ button {
 }
 
 .buttons {
-  height: 3vh;
+  height: 8vh;
 }

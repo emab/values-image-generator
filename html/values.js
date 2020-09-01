@@ -155,8 +155,8 @@ VALUES = {
     text: "Learning",
     level: 4,
   },
-  longtermPersistence: {
-    text: "Long-term persistence",
+  longtermPerspective: {
+    text: "Long-term perspective",
     level: 7,
   },
   makingADifference: {
